@@ -24,3 +24,4 @@ Excel | SQL | Power BI | Python | Git | GitHub
 - GitHub: github.com/Saad04-Cell
 - X: x.com/SaadKhadij48656
 - Instagram: instagram.com/saadkhadijat1
+- https://www.linkedin.com/in/khadijat-oluwatoyin-saad-a39a6b271
