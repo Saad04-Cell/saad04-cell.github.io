@@ -1,50 +1,61 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saad Khadijat Oluwatoyin - Portfolio</title>
+    <!-- Loading Tailwind CSS securely -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #000000;
+            background-color: #0d1117;
             color: #c9d1d9;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8">
+<body class="min-h-screen flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8 bg-[#0d1117]">
     <main class="max-w-4xl w-full mx-auto space-y-16">
         
         <!-- Hero Header -->
         <header class="flex flex-col sm:flex-row items-center gap-8 border-b border-[#30363d] pb-12">
-            <img src="./1767316269231.jpg" class="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border-4 border-[#58a6ff]/20 shadow-xl" alt="Saad Khadijat Oluwatoyin">
+            <!-- Image with automatic fallback if the local file is not uploaded yet -->
+            <img src="./1767316269231.jpg" 
+                 onerror="this.onerror=null; this.src='https://github.com/Saad04-Cell.png';"
+                 class="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border-4 border-[#58a6ff]/20 shadow-xl transition-transform duration-300 hover:scale-105" 
+                 alt="Saad Khadijat Oluwatoyin">
             <div class="space-y-3 text-center sm:text-left">
                 <h1 class="text-4xl font-extrabold text-white tracking-tight">Saad Khadijat Oluwatoyin</h1>
                 <p class="text-lg text-[#58a6ff] font-medium">Data Analytics & AI Enthusiast | Passionate About Data-Driven Solutions</p>
                 <p class="text-gray-400 max-w-xl text-sm leading-relaxed">Using data analytics and AI to drive business growth and create impactful educational solutions.</p>
             </div>
         </header>
-<section class="space-y-4">
-    <h3 class="text-xl font-bold text-white">About Me</h3>
-    <p class="text-gray-400 leading-relaxed">
-        I am a Data Analytics enthusiast with a background in Chemistry Education.
-        I am passionate about using data analytics and AI to support business growth,
-        educational innovation, and sustainable development. My work focuses on
-        Excel, SQL, Power BI, Python, and data visualization.
-    </p>
-</section>
+
+        <!-- About Me Section -->
+        <section class="space-y-4">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                👤 About Me
+            </h3>
+            <p class="text-gray-400 leading-relaxed bg-[#161b22]/50 p-6 rounded-2xl border border-[#30363d]">
+                I am a Data Analytics and Ai enthusiast with a background in Chemistry Education.
+                I am passionate about using data analytics and AI to support business growth,
+                educational innovation, and sustainable development. My work focuses on
+                Excel, SQL, Power BI, Python, and data visualization.
+            </p>
+        </section>
+
         <!-- Technical Skills Section -->
         <section class="space-y-4">
             <h3 class="text-xl font-bold text-white">Core Competencies</h3>
             <div class="flex flex-wrap gap-2">
-                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/10">Excel</span>
-                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/10">SQL</span>
-                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/10">Power BI</span>
-                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/10">Python</span>
-                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/10">GitHub</span>
-                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/10">AI Tools</span>
+                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/20 hover:bg-[#58a6ff]/20 transition-all cursor-default">Excel</span>
+                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/20 hover:bg-[#58a6ff]/20 transition-all cursor-default">SQL</span>
+                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/20 hover:bg-[#58a6ff]/20 transition-all cursor-default">Power BI</span>
+                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/20 hover:bg-[#58a6ff]/20 transition-all cursor-default">Python</span>
+                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/20 hover:bg-[#58a6ff]/20 transition-all cursor-default">GitHub</span>
+                <span class="px-4 py-1.5 bg-[#58a6ff]/10 text-[#58a6ff] rounded-full text-xs font-bold border border-[#58a6ff]/20 hover:bg-[#58a6ff]/20 transition-all cursor-default">AI Tools</span>
             </div>
         </section>
 
@@ -55,42 +66,70 @@
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Project 1 -->
-                <div class="border border-[#30363d] bg-[#161b22]/40 p-6 rounded-2xl hover:border-[#58a6ff]/30 transition-all group">
-                    <div class="flex justify-between items-start mb-2">
-                     <h4 class="font-bold text-white text-base group-hover:text-[#58a6ff] transition-colors">AI-Powered Student Assistant</h4>
-                    <span class="text-xs bg-[#58a6ff]/10 text-[#58a6ff] px-2.5 py-0.5 rounded-full font-semibold">AI</span>
+                <div class="border border-[#30363d] bg-[#161b22]/40 p-6 rounded-2xl hover:border-[#58a6ff]/30 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-white text-base group-hover:text-[#58a6ff] transition-colors">AI-Powered Student Assistant</h4>
+                            <span class="text-xs bg-[#58a6ff]/10 text-[#58a6ff] px-2.5 py-0.5 rounded-full font-semibold border border-[#58a6ff]/10">AI</span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">An AI-driven educational support solution designed to enhance learning experiences and provide personalized assistance for students.</p>
                     </div>
-                    <p class="text-xs text-gray-400 line-clamp-2 mb-4">An AI-driven educational support solution designed to enhance learning experiences and provide personalized assistance for students.</p>
-                    <div class="flex items-center text-xs text-gray-500 gap-1">
-                        <span>🌟 Active</span>
+                    <div class="flex items-center text-xs text-gray-500 gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse"></span>
+                        <span>Active Project</span>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="border border-[#30363d] bg-[#161b22]/40 p-6 rounded-2xl hover:border-[#58a6ff]/30 transition-all group">
-                    <div class="flex justify-between items-start mb-2">
-                        <h4 class="font-bold text-white text-base group-hover:text-[#58a6ff] transition-colors">Power BI Dashboard Analytics</h4>
-                        <span class="text-xs bg-[#58a6ff]/10 text-[#58a6ff] px-2.5 py-0.5 rounded-full font-semibold">Power BI</span>
+                <div class="border border-[#30363d] bg-[#161b22]/40 p-6 rounded-2xl hover:border-[#58a6ff]/30 transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="font-bold text-white text-base group-hover:text-[#58a6ff] transition-colors">Power BI Dashboard Analytics</h4>
+                            <span class="text-xs bg-[#16a34a]/10 text-[#4ade80] px-2.5 py-0.5 rounded-full font-semibold border border-[#16a34a]/20">Business Intelligence</span>
+                        </div>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">Interactive reports mapping key performance indicators and growth metrics visually using automated data pipelines.</p>
                     </div>
-                    <p class="text-xs text-gray-400 line-clamp-2 mb-4">Interactive reports mapping key performance indicators and growth metrics visually.</p>
-                    <div class="flex items-center text-xs text-gray-500 gap-1">
-                        <span>🌟 Active</span>
+                    <div class="flex items-center text-xs text-gray-500 gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-green-500 inline-block animate-pulse"></span>
+                        <span>Active Project</span>
                     </div>
                 </div>
             </div>
         </section>
-<section class="space-y-4">
-    <h3 class="text-xl font-bold text-white">Connect With Me</h3>
-    <div class="space-y-2 text-gray-400">
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/khadijat-oluwatoyin-saad-a39a6b271" class="text-[#58a6ff]">Khadijat Oluwatoyin Saad</a></p>
-        <p>GitHub: <a href="https://github.com/Saad04-Cell" target="_blank" class="text-[#58a6ff]">
-        <p>X: <a href="https://x.com/SaadKhadij48656" class="text-[#58a6ff]">@SaadKhadij48656</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/saadkhadijat1/" class="text-[#58a6ff]">@saadkhadijat1</a></p>
-    </div>
-</section>
+
+        <!-- Connect Section -->
+        <section class="space-y-4">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                🔗 Connect With Me
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://www.linkedin.com/in/khadijat-oluwatoyin-saad-a39a6b271" target="_blank" class="flex items-center justify-between p-4 rounded-xl bg-[#161b22]/60 border border-[#30363d] hover:border-[#58a6ff] hover:bg-[#161b22] transition-all group">
+                    <span class="text-sm text-gray-300 font-medium group-hover:text-white transition-colors">LinkedIn</span>
+                    <span class="text-[#58a6ff] text-xs">View Profile &rarr;</span>
+                </a>
+                <a href="https://github.com/Saad04-Cell" target="_blank" class="flex items-center justify-between p-4 rounded-xl bg-[#161b22]/60 border border-[#30363d] hover:border-[#58a6ff] hover:bg-[#161b22] transition-all group">
+                    <span class="text-sm text-gray-300 font-medium group-hover:text-white transition-colors">GitHub Repository</span>
+                    <span class="text-[#58a6ff] text-xs">Browse Code &rarr;</span>
+                </a>
+                <a href="https://x.com/SaadKhadij48656" target="_blank" class="flex items-center justify-between p-4 rounded-xl bg-[#161b22]/60 border border-[#30363d] hover:border-[#58a6ff] hover:bg-[#161b22] transition-all group">
+                    <span class="text-sm text-gray-300 font-medium group-hover:text-white transition-colors">Twitter / X</span>
+                    <span class="text-[#58a6ff] text-xs">@SaadKhadij48656 &rarr;</span>
+                </a>
+                <a href="https://www.instagram.com/saadkhadijat1/" target="_blank" class="flex items-center justify-between p-4 rounded-xl bg-[#161b22]/60 border border-[#30363d] hover:border-[#58a6ff] hover:bg-[#161b22] transition-all group">
+                    <span class="text-sm text-gray-300 font-medium group-hover:text-white transition-colors">Instagram</span>
+                    <span class="text-[#58a6ff] text-xs">@saadkhadijat1 &rarr;</span>
+                </a>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Footer -->
     <footer class="max-w-4xl w-full mx-auto text-center border-t border-[#30363d] pt-8 mt-12 text-xs text-gray-500">
         <p>&copy; 2025 Saad Khadijat Oluwatoyin. Hosted securely on GitHub Pages.</p>
-    </footer>
+    </footer>     
 </body>
 </html>
+
+```
+
